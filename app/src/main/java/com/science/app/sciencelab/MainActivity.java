@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         Resources res = getResources();
         // Change locale settings in the app.
         DisplayMetrics dm = res.getDisplayMetrics();
@@ -48,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         initItems();
         initClicks();
-
 
     }
 
