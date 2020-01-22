@@ -1,6 +1,7 @@
 package com.science.app.sciencelab;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,11 +53,11 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.MyViewHo
             devicePhotoIm = itemView.findViewById(R.id.devicePhotoIm);
         }
     }
-
     public void refresh(ArrayList<Item> items){
         this.deviceItems.clear();
         this.deviceItems.addAll(items);
         notifyDataSetChanged();
-    }
 
+    }
 }
+
