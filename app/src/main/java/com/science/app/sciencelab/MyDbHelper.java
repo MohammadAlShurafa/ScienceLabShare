@@ -60,9 +60,10 @@ public class MyDbHelper extends SQLiteOpenHelper {
         return items;
     }
     public Item getItemById(int id){
-        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM "+ITEM_TABLE+" WHERE "+id+"="+id+ " LIMIT 1",null);
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM "+ITEM_TABLE+" WHERE "+id+"="+id,null);
         Item item = new Item(0,"","",0,0);
-        if(cursor.getCount() > 0) {
+
+            if(cursor.getCount() > 0) {
             cursor.moveToFirst();
             item.setId(cursor.getInt(0));
             item.setName(cursor.getString(1));

@@ -42,11 +42,12 @@ public class DetailesActivity extends AppCompatActivity {
         }
 
     }
+
     private void initViews() {
         iv_item = findViewById(R.id.iv_item);
         tv_name = findViewById(R.id.tv_title);
         tv_details = findViewById(R.id.tv_details);
-        toolbar =findViewById(R.id.toolbar_main);
+        toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
 
