@@ -69,5 +69,6 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.MyViewHo
         this.deviceItems.addAll(items);
         notifyDataSetChanged();
     }
+
 }
 

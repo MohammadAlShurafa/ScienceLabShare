@@ -1,6 +1,7 @@
 package com.science.app.sciencelab;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +26,8 @@ public class DetailesActivity extends AppCompatActivity {
 
     }
 
+
+
     private void initClicks() {
 
     }
@@ -32,12 +35,16 @@ public class DetailesActivity extends AppCompatActivity {
     private void initItems() {
         intent = getIntent();
         int id = intent.getIntExtra("id", 0);
+        
+
+
 
         if (id != 0) {
             item = new MyDbHelper(DetailesActivity.this).getItemById(id);
             iv_item.setImageResource(item.getImageId());
             tv_name.setText(item.getName());
             tv_details.setText(item.getDetails());
+
 
         }
 
