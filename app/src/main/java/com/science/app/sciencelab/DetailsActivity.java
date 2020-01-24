@@ -23,10 +23,11 @@ public class DetailesActivity extends AppCompatActivity {
         initItems();
         initClicks();
 
+
     }
 
     private void initClicks() {
-
+        
     }
 
     private void initItems() {
@@ -38,7 +39,6 @@ public class DetailesActivity extends AppCompatActivity {
             iv_item.setImageResource(item.getImageId());
             tv_name.setText(item.getName());
             tv_details.setText(item.getDetails());
-
         }
 
     }
