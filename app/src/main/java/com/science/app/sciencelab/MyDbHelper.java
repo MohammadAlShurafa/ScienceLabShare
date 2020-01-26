@@ -60,7 +60,7 @@ public class MyDbHelper extends SQLiteOpenHelper {
         return items;
     }
     public Item getItemById(int id){
-        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM "+ITEM_TABLE+" WHERE "+id+"="+id,null);
+        Cursor cursor = this.getReadableDatabase().rawQuery("SELECT * FROM "+ITEM_TABLE+" WHERE "+ID+"="+id,null);
         Item item = new Item(0,"","",0,0);
 
             if(cursor.getCount() > 0) {
